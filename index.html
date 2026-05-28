@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeBuddies | Future of Learning</title>
+  <meta name="description" content="India's trusted platform for courses, AI training, real projects, and future-ready growth. MSME Registered." />
+  <meta name="keywords" content="CodeBuddies, course India, AI training, data science course, web development, IoT, career growth" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== SPACE CANVAS ===== -->
+<canvas id="spaceCanvas"></canvas>
+
+<!-- ===== CURSOR ===== -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== NAV ===== -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo-link" data-scroll>
+      <div class="logo">
+        <img src="logo.jpg" alt="CodeBuddies Logo" class="logo-img" />
+        <span class="logo-text">Code<span class="logo-accent">Buddies</span></span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-scroll>About</a></li>
+      <li><a href="#courses" data-scroll>Courses</a></li>
+      <li><a href="#why" data-scroll>Why Us</a></li>
+      <li><a href="#services" data-scroll>Services</a></li>
+      <li><a href="#testimonials" data-scroll>Reviews</a></li>
+      <li><a href="#pricing" data-scroll>Pricing</a></li>
+      <li><a href="#faq" data-scroll>FAQ</a></li>
+      <li><a href="#contact" data-scroll>Contact</a></li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="nav-cta">Join Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-orb hero-orb-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge reveal-up delay-0">
+      <span class="badge-dot"></span>
+      MSME Registered · India's Future Learning Lab
+    </div>
+
+    <h1 class="hero-title reveal-up delay-1">
+      Build Real Skills.<br />
+      <span class="gradient-text">Launch Your Career.</span>
+    </h1>
+
+    <p class="hero-sub reveal-up delay-2">
+      India's trusted platform for courses, AI training, real projects, and future-ready growth.
+    </p>
+
+    <div class="hero-actions reveal-up delay-3">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="btn-primary">
+        <span class="btn-glow"></span>
+        Join a Course
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#courses" data-scroll class="btn-secondary">Explore Programs</a>
+    </div>
+
+    <div class="hero-stats reveal-up delay-4">
+      <div class="stat-item">
+        <div class="stat-num" data-target="50">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Students Trained</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="15">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Programs</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num stat-decimal" data-target="4.9">0</div>
+        <div class="stat-label">Rating ⭐</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="100">0</div>
+        <div class="stat-percent">%</div>
+        <div class="stat-label">Certificates</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating planet decorations -->
+  <div class="planet planet-1"></div>
+  <div class="planet planet-2"></div>
+  <div class="planet planet-3"></div>
+
+  <div class="scroll-hint">
+    <div class="scroll-hint-dot"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="section-label reveal-up">01 · About</div>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title reveal-up">Turning Ideas Into<br /><span class="gradient-text">A+ Projects</span></h2>
+        <p class="about-desc reveal-up">
+          CodeBuddies began as a simple idea during college days — noticing that many students relied on pre-built solutions without truly understanding what they learned. We believed learning should be meaningful, not mechanical.
+        </p>
+        <p class="about-desc reveal-up">
+          By 2024, CodeBuddies took shape, and in April 2025 we began operating formally — supporting students and working professionals with project guidance, technical clarity, and structured learning. Today we provide end-to-end support across CSE, ECE, IT, and related fields.
+        </p>
+        <div class="about-pillars reveal-up">
+          <div class="pillar">
+            <div class="pillar-icon">🎯</div>
+            <div>
+              <div class="pillar-title">Mission</div>
+              <div class="pillar-desc">Empower learners with practical knowledge and real understanding</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🚀</div>
+            <div>
+              <div class="pillar-title">Vision</div>
+              <div class="pillar-desc">India's most trusted academic & technical guidance platform</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal-up">
+        <div class="holo-panel">
+          <div class="holo-header">
+            <span class="holo-dot red"></span>
+            <span class="holo-dot yellow"></span>
+            <span class="holo-dot green"></span>
+            <span class="holo-title">CodeBuddies.co.in</span>
+          </div>
+          <div class="holo-body">
+            <div class="holo-line"><span class="hl-key">platform</span> <span class="hl-op">=</span> <span class="hl-str">"CodeBuddies"</span></div>
+            <div class="holo-line"><span class="hl-key">registered</span> <span class="hl-op">=</span> <span class="hl-val">MSME Udyam</span></div>
+            <div class="holo-line"><span class="hl-key">students</span> <span class="hl-op">=</span> <span class="hl-num">50+</span></div>
+            <div class="holo-line"><span class="hl-key">programs</span> <span class="hl-op">=</span> <span class="hl-num">15+</span></div>
+            <div class="holo-line"><span class="hl-key">rating</span> <span class="hl-op">=</span> <span class="hl-num">4.9</span> <span class="hl-str">⭐</span></div>
+            <div class="holo-line mt"><span class="hl-fn">launch</span><span class="hl-op">(</span><span class="hl-str">"your career"</span><span class="hl-op">)</span></div>
+            <div class="holo-output">▶ Future unlocked ✓</div>
+          </div>
+        </div>
+        <div class="about-values">
+          <div class="value-chip">Knowledge over shortcuts</div>
+          <div class="value-chip">Learning through practice</div>
+          <div class="value-chip">Clear guidance</div>
+          <div class="value-chip">Quality work</div>
+          <div class="value-chip">Long-term growth</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COURSES ===== -->
+<section id="courses">
+  <div class="section-label reveal-up">02 · Courses</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">Course <span class="gradient-text">Programs</span></h2>
+    <p class="section-sub text-center reveal-up">Structured courses with real projects, mentorship, and certified outcomes</p>
+
+    <div class="intern-grid">
+
+      <div class="intern-card reveal-up" data-color="cyan">
+        <div class="intern-card-bg"></div>
+        <div class="intern-icon">🤖</div>
+        <div class="intern-tag">Most Popular</div>
+        <h3>AI & Data Science</h3>
+        <p>Dive into machine learning, neural networks, and intelligent systems. Build real AI projects with guided mentorship.</p>
+        <ul class="intern-features">
+          <li>Machine Learning & Deep Learning</li>
+          <li>Python, TensorFlow, Scikit-learn</li>
+          <li>Real Dataset Projects</li>
+          <li>Certificate + Portfolio</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="intern-btn">Apply Now →</a>
+      </div>
+
+      <div class="intern-card reveal-up delay-1" data-color="purple">
+        <div class="intern-card-bg"></div>
+        <div class="intern-icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>Master front-end and back-end technologies. Build responsive, real-world web applications from scratch.</p>
+        <ul class="intern-features">
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Node.js, Databases</li>
+          <li>Full-Stack Projects</li>
+          <li>Certificate + Portfolio</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="intern-btn">Apply Now →</a>
+      </div>
+
+      <div class="intern-card reveal-up delay-2" data-color="blue">
+        <div class="intern-card-bg"></div>
+        <div class="intern-icon">📊</div>
+        <h3>Data Analytics</h3>
+        <p>Transform raw data into powerful insights. Learn visualization, statistical analysis, and business intelligence.</p>
+        <ul class="intern-features">
+          <li>Excel, SQL, Power BI</li>
+          <li>Python Pandas & Matplotlib</li>
+          <li>Business Case Studies</li>
+          <li>Certificate + Portfolio</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="intern-btn">Apply Now →</a>
+      </div>
+
+      <div class="intern-card reveal-up delay-3" data-color="green">
+        <div class="intern-card-bg"></div>
+        <div class="intern-icon">⚡</div>
+        <h3>Hardware / IoT</h3>
+        <p>Bridge the physical and digital worlds. Design smart embedded systems and IoT solutions with hands-on hardware.</p>
+        <ul class="intern-features">
+          <li>Arduino, Raspberry Pi</li>
+          <li>Sensor Integration & Protocols</li>
+          <li>Real Hardware Projects</li>
+          <li>Certificate + Portfolio</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="intern-btn">Apply Now →</a>
+      </div>
+
+    </div>
+
+    <div class="intern-highlights reveal-up">
+      <div class="ih-item"><span>✔</span> Customizable Duration</div>
+      <div class="ih-item"><span>✔</span> Hands-on Projects</div>
+      <div class="ih-item"><span>✔</span> Certified</div>
+      <div class="ih-item"><span>✔</span> Mentor Support</div>
+      <div class="ih-item"><span>✔</span> Real Problem Solving</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section id="why">
+  <div class="section-label reveal-up">03 · Why Choose Us</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">Why <span class="gradient-text">CodeBuddies</span></h2>
+    <p class="section-sub text-center reveal-up">We're not just a platform. We're partners in your learning journey.</p>
+
+    <div class="why-grid">
+      <div class="why-card reveal-up">
+        <div class="why-num">01</div>
+        <div class="why-icon">🏛️</div>
+        <h3>MSME Registered</h3>
+        <p>Government-recognized organization. Legitimate, trusted, and committed to quality education. Code Buddies is a registered company under the name Buddies Dev Lab.</p>
+      </div>
+      <div class="why-card reveal-up delay-1">
+        <div class="why-num">02</div>
+        <div class="why-icon">🌱</div>
+        <h3>Beginner Friendly</h3>
+        <p>Zero prior experience needed. We guide you from absolute basics to industry-level skills.</p>
+      </div>
+      <div class="why-card reveal-up delay-2">
+        <div class="why-num">03</div>
+        <div class="why-icon">🎯</div>
+        <h3>Industry Relevant</h3>
+        <p>Curriculum built around what employers actually need. Real tools, real workflows.</p>
+      </div>
+      <div class="why-card reveal-up delay-3">
+        <div class="why-num">04</div>
+        <div class="why-icon">🧠</div>
+        <h3>Personalized Guidance</h3>
+        <p>One-on-one mentor support. We adapt to your pace, your goals, your learning style.</p>
+      </div>
+      <div class="why-card reveal-up delay-1">
+        <div class="why-num">05</div>
+        <div class="why-icon">💰</div>
+        <h3>Affordable Programs</h3>
+        <p>Premium quality at accessible pricing. Education should never be out of reach.</p>
+      </div>
+      <div class="why-card reveal-up delay-2">
+        <div class="why-num">06</div>
+        <div class="why-icon">📜</div>
+        <h3>Certified Outcomes</h3>
+        <p>Every program ends with a certificate and portfolio project to showcase to employers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="section-label reveal-up">04 · Services</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">Our <span class="gradient-text">Services</span></h2>
+    <p class="section-sub text-center reveal-up">End-to-end academic and professional support for every stage of your journey</p>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal-up">
+        <div class="service-icon-wrap">
+          <div class="service-icon">🔧</div>
+        </div>
+        <h3>Project Handling</h3>
+        <p>Complete guidance for building real-world projects from concept to deployment. We help you understand every line.</p>
+      </div>
+
+      <div class="service-card reveal-up delay-1">
+        <div class="service-icon-wrap">
+          <div class="service-icon">🤖</div>
+        </div>
+        <h3>Advanced AI Mentoring</h3>
+        <p>Personalized AI mentoring for complex topics. Get clarity on algorithms, architectures, and implementations.</p>
+      </div>
+
+      <div class="service-card reveal-up delay-2">
+        <div class="service-icon-wrap">
+          <div class="service-icon">🏆</div>
+        </div>
+        <h3>Community Challenges</h3>
+        <p>Weekly coding challenges to test your skills, collaborate with peers, and win recognition.</p>
+      </div>
+
+      <div class="service-card reveal-up delay-3">
+        <div class="service-icon-wrap">
+          <div class="service-icon">📚</div>
+        </div>
+        <h3>Learn with Buddies</h3>
+        <p>Structured learning programs with interactive sessions, peer learning, and personalized feedback loops.</p>
+      </div>
+
+      <div class="service-card reveal-up delay-1">
+        <div class="service-icon-wrap">
+          <div class="service-icon">📄</div>
+        </div>
+        <h3>Documentation Support</h3>
+        <p>Professional help writing clean, structured documentation for your code, projects, and academic submissions.</p>
+      </div>
+
+      <div class="service-card reveal-up delay-2">
+        <div class="service-icon-wrap">
+          <div class="service-icon">💻</div>
+        </div>
+        <h3>Website Development</h3>
+        <p>End-to-end website development services tailored to your needs using modern, cutting-edge technologies.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="section-label reveal-up">05 · Testimonials</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">What Our <span class="gradient-text">Students Say</span></h2>
+    <p class="section-sub text-center reveal-up">Real voices from real learners who launched their careers with CodeBuddies</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testi-card reveal-up">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"The live coding demo hooked me instantly. Best learning experience I've ever had! The mentor support is truly next level."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">N</div>
+          <div>
+            <div class="testi-name">Nandhini K</div>
+            <div class="testi-role">AI & Data Science Student</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal-up delay-1">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Amazing support and guidance throughout my projects. CodeBuddies helped me understand concepts I struggled with for months."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <div class="testi-name">Priya S</div>
+            <div class="testi-role">Web Development Student</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal-up delay-2">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Transformed my coding skills in just a few weeks! The interactive demos are amazing. I learned JavaScript basics in hours."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <div class="testi-name">Rajesh M</div>
+            <div class="testi-role">Data Analytics Student</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal-up delay-1">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Best coding platform for beginners. The personalized guidance feels like having a senior developer sitting right next to you."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">G</div>
+          <div>
+            <div class="testi-name">Gayatri V</div>
+            <div class="testi-role">IoT Student</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal-up delay-2">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Fun, engaging, and futuristic. Highly recommend to any student who wants to build real skills, not just theory."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <div class="testi-name">Mahesh K</div>
+            <div class="testi-role">AI & Data Science Student</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal-up delay-3">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"The project-based approach at CodeBuddies is unlike anything else. I completed a full data science project and actually understood every step. Truly future-ready learning!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Arun T</div>
+            <div class="testi-role">Data Science Student</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing">
+  <div class="section-label reveal-up">06 · Pricing</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">Simple, <span class="gradient-text">Affordable</span> Plans</h2>
+    <p class="section-sub text-center reveal-up">Premium learning at accessible pricing. Every plan includes certificate and mentor support.</p>
+
+    <div class="pricing-grid">
+
+      <div class="price-card reveal-up">
+        <div class="price-tier">Starter</div>
+        <div class="price-amount">
+          <span class="price-currency">₹</span>
+          <span class="price-num">Contact Us</span>
+        </div>
+        <div class="price-duration">Flexible duration</div>
+        <ul class="price-features">
+          <li>✓ 1 Course</li>
+          <li>✓ Project Guidance</li>
+          <li>✓ Certificate</li>
+          <li>✓ Mentor Support</li>
+          <li class="muted">✗ Advanced AI Mentoring</li>
+          <li class="muted">✗ Documentation Support</li>
+        </ul>
+        <a href="https://forms.gle/QGHu3aU7fuTFytog8" target="_blank" class="price-btn">Get Started</a>
+      </div>
+
+      <div class="price-card price-popular reveal-up delay-1">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Pro</div>
+        <div class="price-amount">
+          <span class="price-currency">₹</span>
+          <span class="price-num">Contact Us</span>
+        </div>
+        <div class="price-duration">Flexible duration</div>
+        <ul class="price-features">
+          <li>✓ All Courses</li>
+          <li>✓ Advanced Project Building</li>
+          <li>✓ Certificate + Portfolio</li>
+          <li>✓ AI Mentoring</li>
+          <li>✓ Documentation Support</li>
+          <li class="muted">✗ Website Development</li>
+        </ul>
+        <a href="https://forms.gle/QGHu3aU7fuTFytog8" target="_blank" class="price-btn">Get Started</a>
+      </div>
+
+      <div class="price-card reveal-up delay-2">
+        <div class="price-tier">Elite</div>
+        <div class="price-amount">
+          <span class="price-currency">₹</span>
+          <span class="price-num">Contact Us</span>
+        </div>
+        <div class="price-duration">Flexible duration</div>
+        <ul class="price-features">
+          <li>✓ Everything in Pro</li>
+          <li>✓ Website Development</li>
+          <li>✓ Community Challenges</li>
+          <li>✓ Priority Support</li>
+          <li>✓ Resume Support</li>
+          <li>✓ Career Guidance</li>
+        </ul>
+        <a href="https://forms.gle/QGHu3aU7fuTFytog8" target="_blank" class="price-btn">Get Started</a>
+      </div>
+
+    </div>
+
+    <div class="pricing-note reveal-up">
+      <span>📞</span>
+      Exact pricing is customized to your program duration and needs. Contact us for a tailored quote.
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="section-label reveal-up">07 · FAQ</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item reveal-up">
+        <button class="faq-q">
+          Who can enrol in CodeBuddies courses?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>Any student or working professional from CSE, ECE, IT, or related engineering backgrounds can apply. We welcome beginners too — no prior experience is required for most programs.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-1">
+        <button class="faq-q">
+          What is the course duration?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>Course duration is flexible and can be customized to your schedule. We offer programs ranging from 2 weeks to 3 months depending on the program and your preference.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-2">
+        <button class="faq-q">
+          Do I get a certificate after completing a course?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes! Every student who completes their course receives an official certificate from CodeBuddies (Buddies Dev Lab), which is MSME (Udyam) registered. You also build a real portfolio project.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-1">
+        <button class="faq-q">
+          Is this online or offline?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>Our programs are primarily online and accessible from anywhere in India. We use interactive sessions, guided projects, and one-on-one mentoring delivered digitally.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-2">
+        <button class="faq-q">
+          How do I register?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>Simply click any "Join Now" or "Apply Now" button on this website to fill the registration form. You can also reach us directly via email or phone and we'll guide you through the process.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-up delay-3">
+        <button class="faq-q">
+          What makes CodeBuddies different from other platforms?
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-a">
+          <p>Unlike platforms that give you pre-built templates, we focus on real understanding. You build projects from scratch with guided mentorship, ensuring you truly understand every concept — not just copy-paste.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-label reveal-up">08 · Contact</div>
+  <div class="container">
+    <h2 class="section-title text-center reveal-up">Get In <span class="gradient-text">Touch</span></h2>
+    <p class="section-sub text-center reveal-up">Ready to launch your career? We're just a message away.</p>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <div class="contact-card reveal-up">
+          <div class="contact-icon">📧</div>
+          <div class="contact-label">Email Us</div>
+          <a href="mailto:connect@codebuddies.co.in" class="contact-value">connect@codebuddies.co.in</a>
+        </div>
+        <div class="contact-card reveal-up delay-1">
+          <div class="contact-icon">🎓</div>
+          <div class="contact-label">Course Registration</div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank" class="contact-value">Register for a Course →</a>
+        </div>
+        <div class="contact-card reveal-up delay-2">
+          <div class="contact-icon">🔧</div>
+          <div class="contact-label">Project Guidance</div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAk4xsXGvi0W4Ze7LbxbOxAWCgQJNl9j85Ha8zFxKGvEUVug/viewform?usp=header" target="_blank" class="contact-value">Register for Project Service →</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal-up delay-1">
+        <div class="holo-panel contact-form-panel">
+          <div class="holo-header">
+            <span class="holo-dot red"></span>
+            <span class="holo-dot yellow"></span>
+            <span class="holo-dot green"></span>
+            <span class="holo-title">Quick Message</span>
+          </div>
+          <div class="holo-body">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <input type="text" id="cf-name" placeholder="Your Name" required class="form-input" />
+              </div>
+              <div class="form-group">
+                <input type="email" id="cf-email" placeholder="Your Email" required class="form-input" />
+              </div>
+              <div class="form-group">
+                <select id="cf-program" required class="form-input">
+                  <option value="">Select Program of Interest</option>
+                  <option value="course" data-label="AI & Data Science">AI & Data Science</option>
+                  <option value="course" data-label="Web Development">Web Development</option>
+                  <option value="course" data-label="Data Analytics">Data Analytics</option>
+                  <option value="course" data-label="Hardware / IoT">Hardware / IoT</option>
+                  <option value="project" data-label="Project Guidance">Project Guidance</option>
+                  <option value="course" data-label="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea id="cf-message" placeholder="Brief message (optional)" rows="3" class="form-input" style="resize:none;"></textarea>
+              </div>
+              <div id="cf-feedback" style="display:none;"></div>
+              <button type="submit" class="btn-primary full-width" id="cf-submit">
+                <span class="btn-glow"></span>
+                Send &amp; Register 🚀
+              </button>
+              <p style="font-family:var(--font-ui);font-size:0.75rem;color:var(--text-dim);text-align:center;margin-top:10px;line-height:1.5;">
+                Submitting will open the relevant registration form based on your selection. Your details will be pre-filled wherever possible.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.jpg" alt="CodeBuddies Logo" class="footer-logo-img" />
+        <span class="footer-brand-name">Code<span class="logo-accent">Buddies</span></span>
+      </div>
+      <p class="footer-tagline">"Turning Ideas Into A+ Projects"</p>
+      <p class="footer-reg">MSME (Udyam) Registered · Buddies Dev Lab</p>
+    </div>
+    <div class="footer-links-col">
+      <div class="footer-col-title">Navigate</div>
+      <a href="#about" data-scroll>About</a>
+      <a href="#courses" data-scroll>Courses</a>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#pricing" data-scroll>Pricing</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </div>
+    <div class="footer-links-col">
+      <div class="footer-col-title">Programs</div>
+      <a href="#courses" data-scroll>AI & Data Science</a>
+      <a href="#courses" data-scroll>Web Development</a>
+      <a href="#courses" data-scroll>Data Analytics</a>
+      <a href="#courses" data-scroll>Hardware / IoT</a>
+    </div>
+    <div class="footer-links-col">
+      <div class="footer-col-title">Contact</div>
+      <a href="mailto:connect@codebuddies.co.in">connect@codebuddies.co.in</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScg6iBAU5OQoYykUS06jeDqaYPb6EXknP8qqA2IJ8lIIfJAEA/viewform?usp=header" target="_blank">Course Registration →</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAk4xsXGvi0W4Ze7LbxbOxAWCgQJNl9j85Ha8zFxKGvEUVug/viewform?usp=header" target="_blank">Project Guidance →</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 CodeBuddies.co.in · All rights reserved</p>
+    <div class="footer-legal">
+      <span id="privacyToggle" class="footer-legal-link">Privacy Policy</span>
+      <span>·</span>
+      <span id="termsToggle" class="footer-legal-link">Terms & Conditions</span>
+    </div>
+  </div>
+  <div class="footer-disclaimer">
+    Disclaimer: Results are not typical. Your outcomes may vary depending on factors such as experience, background, and effort. All learning endeavours require consistent action. Not affiliated with Facebook™. Nothing on this website is a guarantee of specific results.
+  </div>
+</footer>
+
+<!-- ===== LEGAL MODALS ===== -->
+<div class="legal-modal" id="privacyModal">
+  <div class="legal-modal-inner">
+    <button class="legal-close" id="privacyClose">✕</button>
+    <h2 class="gradient-text">Privacy Policy</h2>
+    <p><strong>Effective Date:</strong> September 12, 2025 · <strong>Domain:</strong> www.codebuddies.co.in</p>
+    <p>CodeBuddies collects only the information necessary to provide our services and improve your experience. We collect name, email, phone number, and usage data. Your data is never sold to third parties. We use industry-standard security measures to protect your information. You may request deletion of your data at any time by contacting us at connect@codebuddies.co.in.</p>
+  </div>
+</div>
+<div class="legal-modal" id="termsModal">
+  <div class="legal-modal-inner">
+    <button class="legal-close" id="termsClose">✕</button>
+    <h2 class="gradient-text">Terms & Conditions</h2>
+    <p>By using CodeBuddies services, you agree to use them for lawful educational purposes only. We do not guarantee specific outcomes, results, or grades. Our content is not a substitute for professional advice. CodeBuddies shall not be liable for any direct, indirect, or consequential damages. These terms are governed by the laws of India. For questions, contact connect@codebuddies.co.in.</p>
+  </div>
+</div>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<button class="float-ai" id="aiBtn" title="CodeBuddies AI">
+  <span class="ai-pulse"></span>
+  🤖 Ask AI
+</button>
+
+<!-- ===== AI CHAT MODAL ===== -->
+<div class="ai-modal" id="aiModal">
+  <div class="ai-modal-inner">
+    <div class="ai-modal-head">
+      <div class="ai-modal-title gradient-text">⬡ CodeBuddies AI</div>
+      <button class="ai-close" id="aiClose">✕</button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="ai-options" id="aiOptions"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
