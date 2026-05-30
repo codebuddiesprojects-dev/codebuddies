@@ -373,7 +373,7 @@ document.querySelectorAll('.intern-card, .why-card').forEach(card => {
 
   // Initialise EmailJS with your public key
   if (typeof emailjs !== 'undefined') {
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    emailjs.init(EMAILJS_PUBLIC_KEY);
   }
 
   const form      = document.getElementById('contactForm');
